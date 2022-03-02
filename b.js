@@ -15,4 +15,9 @@ window.addEventListener("load", () => {
         }
     }, 300);
 
+    document.getElementById('fuckyou').addEventListener('mouseover', (e) => {
+        e.path[0].style.top = Math.floor(Math.random() * window.innerHeight) + 'px';
+        e.path[0].style.left = Math.floor(Math.random() * window.innerWidth) + 'px';
+    });
+
 })
